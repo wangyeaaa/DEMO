@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学写一个字</title>
+    <style>
+ *{margin: 0;
+    padding: 0;
+}
+#canvas{
+    display: block;
+    margin: 50px  auto;
+}
+#controller{
+    margin:0 auto;
+}
+.op_btn{
+    float: right;
+    margin:10px 0 0 10px;
+    border:2px solid #aaa;
+    width:80px;
+    height:40px;
+    line-height:40px;
+    font-size:20px;
+    text-align:center;
+    border-radius: 5px 5px;
+    cursor:pointer;
+    background-color: white;
+    font-weight:bold;
+}
+.op_btn:hover{
+    background-color:#def;
+}
+.clearfix{
+    clear:both;
+}
+
+
+.color_btn{
+    float: left;
+    margin: 10px 10px 0 0;
+    border:5px solid white;
+    width:40px;
+    height:40px;
+    border-radius: 5px 5px;
+    cursor:pointer;
+}
+.color_btn:hover{
+    border:3px solid green;
+}
+.color_btn_selected{
+    border:3px solid  black;
+}
+#red{
+    background-color: red;
+}
+#orange{
+    background-color: orange;
+}
+#blue{
+    background-color: blue;
+}
+#yellow{
+    background-color: yellow;
+}
+
+
+    </style>
+    <script src="jquery-1.11.1.min.js"></script>
+    <meta name="viewport" content="height=device-height,width=device-width,initial-scale=1,minimum-scale=1
+                                                            ,maximum-scale=1,user-scalable=no"/>
+</head>
+<body>
+<canvas id="canvas">
+    
+</canvas>
+    <div id="controller">
+        <div id="red" class="color_btn color_btn_selected"></div>
+        <div id="blue" class="color_btn"></div>
+        <div id="yellow" class="color_btn"></div>
+        <div id="orange" class="color_btn"></div>
+        <div id="clear_btn" class="op_btn">清 除</div>
+        <div class="clearfix"></div>
+    </div>
+</body>
+<script src="handwrite.js"></script>
+</html>
